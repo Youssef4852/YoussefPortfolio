@@ -641,6 +641,20 @@ section::before {
 .skills .box-skill .progress:has(.prog .prog-hold:hover) .prog-info .prog-num {
   color: #fff;
 }
+.skills
+  .box-skill
+  .progress:has(.prog .prog-hold:active)
+  .prog-info
+  .prog-num::after {
+  display: none;
+}
+.skills
+  .box-skill
+  .progress:has(.prog .prog-hold:active)
+  .prog-info
+  .prog-num {
+  color: var(--main-color);
+}
 .skills .box-skill .progress .prog {
   background-color: #eee;
   width: 100%;
